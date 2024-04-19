@@ -1,0 +1,107 @@
+main {
+    position: sticky;
+    background-color: #FFFFFFC9;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 60vh;
+    margin-bottom: 0;
+    padding: 1em;
+    z-index: -2;
+    border-radius: 10px;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+main div {
+    background-color: white;
+    border-radius: 25px;
+    padding: 50px;
+}
+
+#sprawdzacz {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 30vh 30vw 30vh 30vw;
+    width: calc(100vw - (2 * 30vw));
+}
+
+#sprawdzacz #wpisanie form{
+    display: flex;
+    flex: 1;
+}
+
+#sprawdzacz #wpisanie form input {
+    flex: 4;
+    margin-right: 0;
+    height: 3em;
+}
+
+#sprawdzacz #wpisanie form button {
+    flex: 1;
+    margin-left: 0;
+}
+
+#sprawdzacz #kalendarz {
+    flex:5;
+    display: flex;
+    flex-direction: column;
+}
+
+#sprawdzacz #kalendarz table {
+    background-color: white;
+    flex: 10;
+    width: 100%;
+}
+
+#sprawdzacz #kalendarz button {
+    flex: 5;
+}
+
+#sprawdzacz #kalendarz table td {
+    border: 1px solid black;
+}
+
+#sprawdzacz #kalendarz table td:hover {
+    background-color: orange;
+}
+
+#sprawdzacz #kalendarz table td.no {
+    background-color: gray;
+}
+
+nav {
+    display: flex;
+    width: 90vw;
+    background-color: white;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    border-radius: 10px;
+    position: sticky;
+    top: 10px;
+}
+nav a {
+    padding: 1em;
+    border-left: solid 2px black;
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+}
+
+#zaslaniacz {
+    width: 100%;
+    height: calc(10px + 2em);
+    position: fixed;
+    top: 0px;
+    z-index: -1;
+    background: inherit;
+}
+
+body {
+    margin-bottom: 0;
+    background-image: url("IMG_20240419_085200.jpg");
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

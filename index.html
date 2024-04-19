@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <title>eCatering</title>
+        <link rel="stylesheet" href="index_style.css">
+        <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+        <script src="index.js"></script>
+</head>
+<body onload="smoothScrollIn()">
+        <nav>
+            <a style="border-left: none;" href="#sprawdzacz" onclick="getDays('~~~~~@')">Zakup</a>
+            <a href="#sprawdzacz">Sprawdz eKarte</a>
+            <a href="">Konto</a>
+        </nav>
+        <div id="zaslaniacz"></div>
+        <div id="sprawdzacz">
+            <div id="wpisanie">
+                <form action="javascript:" onsubmit="getDays(this[0].value)">
+                    <input id="" type="text" placeholder="Wpisz kod...">
+                    <button>-></button>
+                </form>
+            </div>
+            <div id="kalendarz">
+            </div>
+        </div>
+        <div id="qr" style="display: none; width: 20vw; margin-left: 40vw; text-align: center;">
+            <img style="width: 20vw;" src="qr.png"><br>
+            <button style="margin-left: 40vw;">Pobierz</button>
+            <button>Załóż konto/Dodaj do konta</button>
+        </div>
+        <main>
+            <h1>
+            </h1>
+            <div id="sprawdzanie">
+            </div>
+        </main>
+</body>
+</html>
